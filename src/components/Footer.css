@@ -1,0 +1,92 @@
+.footer {
+    background-color: #533d7a; /* Same violet background as The Founder page */
+    color: white;
+    padding: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    margin-top: 150px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-title {
+    font-size: 3.5rem;
+    color: #fac227; /* Orange-yellow color */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-text {
+    font-size:1rem;
+    color:#fac227;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .footer-contact{
+    color: #fac227;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #fac227;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: #fac227;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: white; /* Orange-yellow on hover */
+  }
+  
+  .footer-line {
+    border: 1px solid #fac227;
+    margin-top: 20px;
+  }
+  
+  .footer-copyright {
+    text-align: normal;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      text-align: center;
+    }
+  }
+  

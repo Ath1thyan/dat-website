@@ -1,0 +1,82 @@
+.the-founder {
+    background-color: #533d7a; /* Violet background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+    text-align: left;
+  }
+  
+  .founder-title {
+    font-size: 4rem;
+    color: #fac227; /* Orange-yellow color */
+    margin-bottom: 50px;
+    margin-left: 150px;
+    font-weight: bold;
+  }
+  
+  .founder-content {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin-left: 150px;
+  }
+  
+  .founder-image img {
+    width: 1800px;
+    height: 700px;
+  }
+  
+  .founder-details {
+    flex-grow: 1;
+    padding: 50px;
+    margin-left: 100px;
+  }
+  
+  .founder-name {
+    font-size: 2rem;
+    color: #fac227; /* Orange-yellow color */
+    font-weight:500;
+  }
+  
+  .founder-designation {
+    font-size: 1.2rem;
+    color: #fac227; /* Orange-yellow color */
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  
+  .founder-description {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 50px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .founder-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .founder-image img {
+      margin-bottom: 30px;
+      width: 1800px;
+    }
+  
+    .founder-title {
+      font-size: 2.5rem;
+    }
+  
+    .founder-name {
+      font-size: 2rem;
+    }
+  
+    .founder-designation {
+      font-size: 1.5rem;
+    }
+  }
+  
