@@ -1,55 +1,55 @@
-
-import React, { useEffect } from 'react';
-import WhoWeAre from './components/WhoWeAre';
-import HowWeInnovate from './components/HowWeInnovate';
-import OurApproach from './components/OurApproach';
-import OurValues from './components/OurValues';
-import OurPolicies from './components/OurPolicies';
-import TheFounder from './components/TheFounder';
-import DctGuild from './components/DctGuild';
-import Footer from './components/Footer';
-import './assets/styles.css';
+import React, { useEffect, useRef } from "react";
+import WhoWeAre from "./components/WhoWeAre";
+import HowWeInnovate from "./components/HowWeInnovate";
+import OurApproach from "./components/OurApproach";
+import OurValues from "./components/OurValues";
+import OurPolicies from "./components/OurPolicies";
+import TheFounder from "./components/TheFounder";
+import DctGuild from "./components/DctGuild";
+import Footer from "./components/Footer";
+// import "./assets/styles.css";
+import Home from "./components/Home";
 
 const App = () => {
+  const GroupRef = useRef([]);
+
+  const onScroll = (eL) => {
+    const styles = GroupRef.current
+      .map((group, i) => {
+        const rect = group.getBoundingClientRect();
+
+        return { group, rect };
+      })
+      .find((group) => group.rect.bottom >= window.innerHeight * 0.5);
+
+    document.body.style.backgroundColor = `${styles.group.dataset.bgcolor}`;
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll('.section');
-      let currentSection;
-
-      sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const sectionHeight = section.getBoundingClientRect().height;
-        const windowHeight = window.innerHeight;
-
-        if (sectionTop <= windowHeight / 2 && sectionTop + sectionHeight >= windowHeight / 2) {
-          currentSection = section;
-        }
-      });
-
-      if (currentSection) {
-        document.body.style.backgroundColor = currentSection.dataset.bgcolor;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <div className="app-container">
-      <section id="who-we-are">
+    <div className="app-container main">
+      <section ref={(el) => (GroupRef.current[0] = el)} data-bgcolor="">
+        <Home />
+      </section>
+      <section ref={(el) => (GroupRef.current[1] = el)} data-bgcolor="#9333ea">
         <WhoWeAre />
       </section>
-      <HowWeInnovate />
-      <OurApproach />
-      <section id="our-values">
-        <OurValues />
+      <section data-bgcolor="#ffffff" ref={(el) => (GroupRef.current[2] = el)}>
+        <HowWeInnovate />
       </section>
-      <section id="our-policies">
+      <section data-bgcolor="#facc15" ref={(el) => (GroupRef.current[3] = el)}>
+        <OurApproach />
+      </section>
+      <section>
         <OurPolicies />
       </section>
-      <TheFounder />
-      <section id="dct-guild">
+      <section ref={(el) => (GroupRef.current[4] = el)} data-bgcolor="#533d7a">
+        <TheFounder />
+      </section>
+      <section ref={(el) => (GroupRef.current[5] = el)} data-bgcolor="#F5F5F5">
         <DctGuild />
       </section>
       <Footer />

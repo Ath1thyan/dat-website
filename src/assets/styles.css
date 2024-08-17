@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
     transition: background-color 0.5s ease;
@@ -16,10 +16,16 @@ body {
   }
   
   /* Background colors for sections are applied via the data-bgcolor attribute */
-  /* Add responsive styles */
-  @media (max-width: 768px) {
+/* Add responsive styles */
+/* @media (max-width: 768px) {
     .section {
       padding: 50px;
     }
-  }
-  
+  } */
+*/
+/* // style */
+
+.main {
+  background-color: #ffffff; /* Set an initial background color */
+  transition: background-color 0.5s ease; /* Smooth transition */
+}
