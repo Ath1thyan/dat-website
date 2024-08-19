@@ -22,6 +22,7 @@
     color: #fac227; /* Orange-yellow color */
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: Helvetica;
   }
   
   .footer-text {
@@ -29,9 +30,11 @@
     color:#fac227;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: Helvetica;
   }
   .footer-contact{
     color: #fac227;
+    font-family: Helvetica;
   }
   .footer-links {
     list-style: none;
@@ -46,6 +49,7 @@
     color: #fac227;
     text-decoration: none;
     font-size: 1rem;
+    font-family: Helvetica;
   }
   
   .footer-links a:hover {
@@ -76,6 +80,7 @@
     text-align: normal;
     margin-top: 10px;
     font-size: 1rem;
+    font-family: Helvetica;
   }
   
   /* Responsive adjustments */

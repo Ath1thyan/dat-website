@@ -34,22 +34,22 @@ const App = () => {
       <section ref={(el) => (GroupRef.current[0] = el)} data-bgcolor="">
         <Home />
       </section>
-      <section ref={(el) => (GroupRef.current[1] = el)} data-bgcolor="#9333ea">
+      <section ref={(el) => (GroupRef.current[1] = el)} data-bgcolor="#9333ea" id="who-we-are">
         <WhoWeAre />
       </section>
       <section data-bgcolor="#ffffff" ref={(el) => (GroupRef.current[2] = el)}>
         <HowWeInnovate />
       </section>
-      <section data-bgcolor="#facc15" ref={(el) => (GroupRef.current[3] = el)}>
+      <section data-bgcolor="#facc15" ref={(el) => (GroupRef.current[3] = el)} id="our-values">
         <OurApproach />
       </section>
-      <section>
+      <section id="our-policies">
         <OurPolicies />
       </section>
       <section ref={(el) => (GroupRef.current[4] = el)} data-bgcolor="#533d7a">
         <TheFounder />
       </section>
-      <section ref={(el) => (GroupRef.current[5] = el)} data-bgcolor="#F5F5F5">
+      <section ref={(el) => (GroupRef.current[5] = el)} data-bgcolor="#F5F5F5" id="dct-guild">
         <DctGuild />
       </section>
       <Footer />

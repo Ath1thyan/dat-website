@@ -10,6 +10,7 @@
     margin-bottom: 50px;
     font-weight: bold;
     margin-left: 150px;
+    font-family: Helvetica;
   }
   
   .guild-description {
@@ -18,6 +19,7 @@
     margin-bottom: 50px;
     width: 700px;
     margin-left: 150px;
+    font-family: Helvetica;
   }
   
   .guild-members {
@@ -52,11 +54,13 @@
     color: #333;
     margin-bottom: 10px;
     font-weight: bold;
+    font-family: Helvetica;
   }
   
   .member-role {
     font-size: 1rem;
     color: #777;
+    font-family: Helvetica;
   }
   
   /* Responsive adjustments */
