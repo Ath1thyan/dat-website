@@ -6,8 +6,10 @@ const HowWeInnovate = () => {
       className=" px-10 md:px-48 py-10 md:py-20"
       // data-bgcolor="#fffff"
     >
-      <p className="font-bold text-3xl md:text-5xl">How We Innovate</p>
-      <div className="mt-10 flex flex-col md:flex-row gap-8 text-gray-500">
+      <p className="font-helvetica-bold text-3xl md:text-5xl">
+        How We Innovate
+      </p>
+      <div className="mt-10 flex flex-col md:flex-row gap-8 text-gray-500 font-helvetica-light">
         <div className="md:w-1/3">
           <p>
             We believe that great inspiration begins with one question, or two.

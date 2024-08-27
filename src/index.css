@@ -6,3 +6,18 @@ body {
   background-color: transparent;
   transition: background-color 1s ease;
 }
+
+.font-helvetica-light {
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.font-helvetica-normal {
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
+.font-helvetica-bold {
+  font-family: Helvetica;
+  font-weight: 700;
+}

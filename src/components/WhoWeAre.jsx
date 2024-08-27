@@ -28,8 +28,8 @@ const WhoWeAre = () => {
       // data-bgcolor="#9333ea"
     >
       <div className="flex flex-col gap-8">
-        <p className="font-bold text-3xl md:text-5xl">Who We Are</p>
-        <div className="flex flex-col gap-4 text-yellow-500">
+        <p className="font-helvetica-bold text-3xl md:text-5xl">Who We Are</p>
+        <div className="flex flex-col gap-4 text-yellow-500 font-helvetica-light">
           <p>
             DCT is an independent and multi-disciplined agency based in Qatar.
           </p>
@@ -39,7 +39,7 @@ const WhoWeAre = () => {
             Vision 2030.
           </p>
         </div>
-        <div className="flex flex-col uppercase gap-2 font-semibold">
+        <div className="flex flex-col uppercase gap-2 font-semibold font-helvetica-normal">
           <p>We let our curiosity lead the way</p>
           <p>we provide unique perspectives</p>
           <p>we thick bold</p>
