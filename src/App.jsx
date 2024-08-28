@@ -36,7 +36,7 @@ const App = () => {
       </section>
       <section
         ref={(el) => (GroupRef.current[1] = el)}
-        data-bgcolor="#FFA500"
+        data-bgcolor="#ff7e00"
         id="who-we-are"
       >
         <WhoWeAre />
@@ -58,7 +58,7 @@ const App = () => {
       >
         <OurPolicies />
       </section>
-      <section ref={(el) => (GroupRef.current[5] = el)} data-bgcolor="#FFA500">
+      <section ref={(el) => (GroupRef.current[5] = el)} data-bgcolor="#ff7e00">
         <TheFounder />
       </section>
       <section
