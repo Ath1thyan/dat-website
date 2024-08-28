@@ -23,13 +23,10 @@ const WhoWeAre = () => {
     };
   };
   return (
-    <section
-      className=" bg-purple-600 text-yellow-400 flex flex-col md:flex-row px-10 md:px-40 py-10 md:py-20 gap-8 md:gap-16"
-      // data-bgcolor="#9333ea"
-    >
+    <section className="  text-white flex flex-col md:flex-row px-10 md:px-40 py-10 md:py-20 gap-8 md:gap-16">
       <div className="flex flex-col gap-8">
         <p className="font-helvetica-bold text-3xl md:text-5xl">Who We Are</p>
-        <div className="flex flex-col gap-4 text-yellow-500 font-helvetica-light">
+        <div className="flex flex-col gap-4 text-white font-helvetica-light">
           <p>
             DCT is an independent and multi-disciplined agency based in Qatar.
           </p>
