@@ -1,5 +1,4 @@
 .the-founder {
-  /* background-color: #533d7a; Violet background */
   color: white;
   display: flex;
   flex-direction: column;
@@ -9,7 +8,7 @@
 
 .founder-title {
   font-size: 4rem;
-  color: white; /* Orange-yellow color */
+  color: white;
   margin-bottom: 50px;
   margin-left: 150px;
   font-weight: bold;
@@ -36,14 +35,14 @@
 
 .founder-name {
   font-size: 2rem;
-  color: white; /* Orange-yellow color */
+  color: white;
   font-weight: 500;
   font-family: Helvetica;
 }
 
 .founder-designation {
   font-size: 1.2rem;
-  color: white; /* Orange-yellow color */
+  color: white;
   margin-bottom: 25px;
   margin-top: 25px;
   font-weight: bold;
@@ -51,9 +50,9 @@
 }
 
 .founder-description {
-  font-size: 1.3rem;
+  font-size: 1rem; /* Equivalent to text-md */
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 15px; /* Reduce the gap between paragraphs */
   font-family: Helvetica;
   margin-right: 50px;
 }

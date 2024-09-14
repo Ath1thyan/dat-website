@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Image1 from "../assets/image1.avif";
-import LOGO from "../assets/logo.png";
+// import Image1 from "../assets/image1.avif";
+import { image1, s } from "../assets/index";
 import {
   FaInstagram,
   FaLinkedin,
@@ -8,17 +8,18 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLink = [
-    { name: "Who We Are", link: "#" },
-    { name: "Founder", link: "#" },
-    { name: "Values", link: "#" },
-    { name: "Policies", link: "#" },
-    { name: "DCT Guild", link: "#" },
-    { name: "Contact", link: "#" },
+    { name: "Who We Are", link: "WhoWeAre" },
+    { name: "Founder", link: "TheFounder" },
+    { name: "Values", link: "values" },
+    { name: "Policies", link: "OurPolicies" },
+    { name: "DCT Guild", link: "DctGuild" },
+    { name: "Contact", link: "Footer" },
   ];
 
   const toggleMenu = () => {
@@ -28,27 +29,26 @@ const Home = () => {
     <section
       className="bg-cover bg-center"
       style={{
-        backgroundImage: `url(${Image1})`,
+        backgroundImage: `url(${image1})`,
         height: "700px",
       }}
     >
       <nav className="flex justify-between p-5 md:p-20 items-center">
         <div className="uppercase text-yellow-400 font-bold text-xl md:text-2xl flex items-center gap-2">
-          {/* <p>
-            <span className="text-yellow-500">D</span>CT
-          </p>
-          <p>
-            <span className="text-yellow-500">Thick</span>
-            <br />
-            Bold
-          </p> */}
-          <img src={LOGO} alt="" className="w-16 h-16 rounded-md shadow-md" />
+          <img src={s} alt="" className="w-28 h-28 rounded-md shadow-md" />
         </div>
         <div className="hidden md:block">
-          <ul className="flex flex-row gap-4 md:gap-8 text-white items-center font-helvetica-light">
+          <ul className="flex flex-row gap-4 md:gap-8 text-white items-center font-helvetica-bold">
             {navLink.map((data, index) => (
-              <li key={index}>
-                <a href={data.link}>{data.name}</a>
+              <li key={index} className="cursor-pointer">
+                <Link
+                  to={data.link}
+                  aria-current="page"
+                  smooth={true}
+                  spy={true}
+                >
+                  {data.name}
+                </Link>
               </li>
             ))}
             <li>

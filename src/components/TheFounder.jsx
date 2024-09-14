@@ -4,7 +4,7 @@ import "./TheFounder.css"; // Custom styles for this component
 
 const TheFounder = () => {
   return (
-    <section className="main the-founder">
+    <section id="TheFounder" className="main the-founder">
       <h1 className="founder-title">The Founder</h1>
       <div className="founder-content">
         <div className="founder-image">
@@ -18,9 +18,12 @@ const TheFounder = () => {
             <p className="founder-description">
               DCT embodies the culmination of a personal journey that is at the
               heart of our mission, our relationships and our approach as an
-              agency. The DCT team is driven by entrepreneurs with access to
-              expertise and insights across the entire spectrum of building
-              fabulously new experiences.
+              agency.
+            </p>
+            <p className="founder-description">
+              The DCT team is driven by entrepreneurs with access to expertise
+              and insights across the entire spectrum of building fabulously new
+              experiences.
             </p>
             <p className="founder-description">
               DCT is about endurance and being audacious not only in business
@@ -29,12 +32,15 @@ const TheFounder = () => {
             </p>
             <p className="founder-description">
               DCT works to catalyze solutions to key human, social, economic and
-              environmental challenges. We invest creatively to stimulate
-              innovation and growth, develop human capital to uplift
-              capabilities and enhance potential; enable natural capital to
-              foster sustainable solutions for a better living environment and
-              nurture social capital to transform lives for a more inclusive and
-              resilient society.
+              environmental challenges.
+            </p>
+            <p className="founder-description">
+              {" "}
+              We invest creatively to stimulate innovation and growth, develop
+              human capital to uplift capabilities and enhance potential; enable
+              natural capital to foster sustainable solutions for a better
+              living environment and nurture social capital to transform lives
+              for a more inclusive and resilient society.
             </p>
           </div>
         </div>

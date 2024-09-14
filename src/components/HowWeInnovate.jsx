@@ -2,10 +2,7 @@ import React from "react";
 
 const HowWeInnovate = () => {
   return (
-    <section
-      className=" px-10 md:px-48 py-10 md:py-20"
-      // data-bgcolor="#fffff"
-    >
+    <section className=" px-10 md:px-48 py-10 md:py-20">
       <p className="font-helvetica-bold text-3xl md:text-5xl">
         How We Innovate
       </p>

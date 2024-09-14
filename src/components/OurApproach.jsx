@@ -1,6 +1,6 @@
 import React from "react";
-import Image2 from "../assets/image3.jpg";
 import { motion } from "framer-motion";
+import { image2 } from "../assets/index";
 
 const OurApproach = () => {
   const FadeUp = (delay) => {
@@ -60,7 +60,7 @@ const OurApproach = () => {
           </p>
           <br />
           <p className="font-helvetica-bold text-2xl">
-            We believe in the "Just Ask"
+            We believe in "Just Ask"
           </p>
           <br />
           <p className="text-gray-600 font-helvetica-light">
@@ -70,7 +70,7 @@ const OurApproach = () => {
         </div>
       </div>
       <div className="h-[1px] w-full bg-black mt-20"></div>
-      <div className="flex flex-col md:flex-row mt-20 gap-8">
+      <div id="values" className="flex flex-col md:flex-row mt-20 gap-8">
         <div className="flex flex-1 flex-col gap-12">
           <p className="font-helvetica-bold text-3xl md:text-5xl">Our Values</p>
           <motion.img
@@ -78,14 +78,14 @@ const OurApproach = () => {
             initial="initial"
             whileInView={"animate"}
             viewport={{ once: true, amount: 0.5 }}
-            src={Image2}
+            src={image2}
             alt=""
             className="w-full h-auto rounded-md"
           />
         </div>
         <div className="flex flex-1 flex-col gap-12">
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Bold</p>
+            <p className="font-helvetica-bold text-xl">Think Bold</p>
             <p className="font-helvetica-light">
               This value is inherent within all our Values -trust each other and
               encourage each other to push beyond boundaries. Be willing to
@@ -93,27 +93,27 @@ const OurApproach = () => {
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Forward</p>
+            <p className="font-helvetica-bold text-xl">Think Forward</p>
             <p className="font-helvetica-light">
               Empower creations that identify, shape and actualise aspirations.
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Enthusiastic</p>
+            <p className="font-helvetica-bold text-xl">Think Enthusiastic</p>
             <p className="font-helvetica-light">
               Nothing great was ever achieved without enthusiasm - enthusiasm is
               a choice and enthusiasm makes the impossible become possible.
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Prudent</p>
+            <p className="font-helvetica-bold text-xl">Think Prudent</p>
             <p className="font-helvetica-light">
               Use sound judgrnent and think ot ways we can innovate and do
               things better.
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Excellence</p>
+            <p className="font-helvetica-bold text-xl">Think Excellence</p>
             <p className="font-helvetica-light">
               Our Values embody the excellence of everything we do.
             </p>
@@ -121,27 +121,27 @@ const OurApproach = () => {
         </div>
         <div className="flex flex-1 flex-col gap-12">
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Original</p>
+            <p className="font-helvetica-bold text-xl">Think Original</p>
             <p className="font-helvetica-light">
               Use sound judgment, think innovation and excel.
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Empowered</p>
+            <p className="font-helvetica-bold text-xl">Think Empowered</p>
             <p className="font-helvetica-light">
               Discuss, consult, seek views and not permission. Use your drive
               and author your own development.
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Meritocratic</p>
+            <p className="font-helvetica-bold text-xl">Think Meritocratic</p>
             <p className="font-helvetica-light">
               Express your ideas, each idea is respected, every idea has
               potential to create success.
             </p>
           </div>
           <div className="flex flex-1 flex-col gap-4">
-            <p className="font-helvetica-bold text-xl">Thick Integrity</p>
+            <p className="font-helvetica-bold text-xl">Think Integrity</p>
             <p className="font-helvetica-light">
               Be honest, ethical, and trustworthy. Do the right thing.
             </p>

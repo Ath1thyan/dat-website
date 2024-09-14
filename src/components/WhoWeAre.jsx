@@ -1,5 +1,5 @@
 import React from "react";
-import Image2 from "../assets/image3.jpg";
+import { image3 } from "../assets/index";
 import { motion } from "framer-motion";
 
 const WhoWeAre = () => {
@@ -22,11 +22,15 @@ const WhoWeAre = () => {
       },
     };
   };
+
   return (
-    <section className="  text-white flex flex-col md:flex-row px-10 md:px-40 py-10 md:py-20 gap-8 md:gap-16">
-      <div className="flex flex-col gap-8">
+    <section
+      id="WhoWeAre"
+      className="text-white px-10 md:px-40 py-10 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-8"
+    >
+      <div className="flex flex-col gap-8 w-full">
         <p className="font-helvetica-bold text-3xl md:text-5xl">Who We Are</p>
-        <div className="flex flex-col gap-4 text-white font-helvetica-light">
+        <div className="flex flex-col gap-4 text-white font-helvetica-light pt-10">
           <p>
             DCT is an independent and multi-disciplined agency based in Qatar.
           </p>
@@ -39,7 +43,7 @@ const WhoWeAre = () => {
         <div className="flex flex-col uppercase gap-2 font-semibold font-helvetica-normal">
           <p>We let our curiosity lead the way</p>
           <p>we provide unique perspectives</p>
-          <p>we thick bold</p>
+          <p>we think bold</p>
         </div>
       </div>
       <motion.div
@@ -47,11 +51,12 @@ const WhoWeAre = () => {
         initial="initial"
         whileInView={"animate"}
         viewport={{ once: true, amount: 0.5 }}
+        className="flex justify-center"
       >
         <img
-          src={Image2}
+          src={image3}
           alt="Who We Are"
-          className="w-full h-auto rounded-md"
+          className="w-full h-auto max-h-[450px] rounded-md object-cover"
         />
       </motion.div>
     </section>

@@ -1,12 +1,12 @@
 import React from "react";
-import Image1 from "../assets/image1.avif";
+import { image1 } from "../assets/index";
 
 const OurPolicies = () => {
   return (
-    <div className="relative bg-[#ff7e00] text-white py-32">
+    <div id="OurPolicies" className="relative bg-[#ff7e00] text-white py-32">
       <div className="absolute inset-0">
         <img
-          src={Image1}
+          src={image1}
           alt="Background"
           className="w-full h-full object-cover opacity-50"
         />
