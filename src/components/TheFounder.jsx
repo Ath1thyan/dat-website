@@ -1,6 +1,6 @@
 import React from "react";
-import founderImage from "../assets/founder.jpg"; // Ensure you have the founder's image in the assets folder
-import "./TheFounder.css"; // Custom styles for this component
+import "./TheFounder.css";
+import { Ouaissa } from "../assets/index";
 
 const TheFounder = () => {
   return (
@@ -8,7 +8,7 @@ const TheFounder = () => {
       <h1 className="founder-title">The Founder</h1>
       <div className="founder-content">
         <div className="founder-image">
-          <img src={founderImage} alt="Founder" />
+          <img src={Ouaissa} alt="Founder" />
         </div>
         <div className="founder-details">
           <p className="founder-name">IMANE</p>

@@ -35,10 +35,10 @@ const Home = () => {
     >
       <nav className="flex justify-between p-5 md:p-20 items-center">
         <div className="uppercase text-yellow-400 font-bold text-xl md:text-2xl flex items-center gap-2">
-          <img src={s} alt="" className="w-28 h-28 rounded-md shadow-md" />
+          <img src={s} alt="" className="w-28 h-28 rounded-md" />
         </div>
         <div className="hidden md:block">
-          <ul className="flex flex-row gap-4 md:gap-8 text-white items-center font-helvetica-bold">
+          <ul className="flex flex-row gap-4 md:gap-8 text-[#ff7e00] items-center font-helvetica-bold">
             {navLink.map((data, index) => (
               <li key={index} className="cursor-pointer">
                 <Link
@@ -93,7 +93,7 @@ const Home = () => {
           </ul>
         </div>
       )}
-      <div className="font-helvetica-bold text-4xl md:text-6xl text-yellow-500 uppercase mt-20 ml-10 md:mt-36 md:ml-40">
+      <div className="font-helvetica-bold text-4xl md:text-6xl text-[#ff7e00] uppercase mt-20 ml-10 md:mt-36 md:ml-40">
         initiate <br /> elevate <br /> catalyse
       </div>
     </section>

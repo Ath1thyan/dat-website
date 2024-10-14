@@ -36,7 +36,7 @@ const Footer = () => {
             className="footer-contact"
             style={{ marginBottom: "10px", fontWeight: "bold" }}
           >
-            OFFICE
+            Office
           </p>
           <p className="footer-contact" style={{ marginBottom: "15px" }}>
             +974 4002 3092

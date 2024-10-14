@@ -75,7 +75,7 @@ const DctGuild = () => {
             <img
               src={member.image}
               alt={member.name}
-              className="member-image"
+              className="w-[400px] h-[400px] object-cover mb-[20px]"
             />
             <h3 className="member-name">{member.name}</h3>
             <p className="member-role">{member.role}</p>

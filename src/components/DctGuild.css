@@ -1,81 +1,80 @@
 .dct-guild {
-    color: #333;
-    padding: 100px 50px;
-    text-align: normal;
-  }
-  
-  .guild-title {
-    font-size: 5rem;
-    color: #333;
-    margin-bottom: 50px;
-    font-weight: bold;
-    margin-left: 150px;
-    font-family: Helvetica;
-  }
-  
-  .guild-description {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 50px;
-    width: 700px;
-    margin-left: 150px;
-    font-family: Helvetica;
-  }
-  
-  .guild-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 100px;
-  }
-  
-  .member-card {
-    background-color: #ffffff00;
-    padding: 20px;
-    text-align:left;
-    transition: transform 0.3s ease;
-  }
-  
-  .member-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .member-image {
+  color: #333;
+  padding: 100px 50px;
+  text-align: normal;
+}
+
+.guild-title {
+  font-size: 5rem;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-left: 150px;
+  font-family: Helvetica;
+}
+
+.guild-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+  width: 700px;
+  margin-left: 150px;
+  font-family: Helvetica;
+}
+
+.guild-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 100px;
+}
+
+.member-card {
+  background-color: #ffffff00;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+/* .member-image {
     width: 350px;
     height: 350px;
     margin-bottom: 20px;
+  } */
+
+.member-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.member-role {
+  font-size: 1rem;
+  color: #777;
+  font-family: Helvetica;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .guild-title {
+    font-size: 2.5rem;
   }
-  
-  .member-name {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-family: Helvetica;
+
+  .member-card {
+    padding: 15px;
   }
-  
-  .member-role {
-    font-size: 1rem;
-    color: #777;
-    font-family: Helvetica;
+
+  .member-image {
+    width: 120px;
+    height: 120px;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .guild-title {
-      font-size: 2.5rem;
-    }
-  
-    .member-card {
-      padding: 15px;
-    }
-  
-    .member-image {
-      width: 120px;
-      height: 120px;
-    }
-  }
-  
+}
