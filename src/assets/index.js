@@ -8,6 +8,7 @@ import Jason from "./GuildPics/Jason.jpeg";
 import Rochelle from "./GuildPics/Rochelle.jpg";
 import RodHolden from "./GuildPics/RodHolden.jpeg";
 import Tony2 from "./GuildPics/Tony2.jpeg";
+import kheng from "./GuildPics/kheng.jpeg";
 import s from "./s.png";
 import Ouaissa from "./websitePics/Ouaissa.jpg";
 
@@ -24,4 +25,5 @@ export {
   Tony2,
   s,
   Ouaissa,
+  kheng,
 };
