@@ -8,7 +8,11 @@ const TheFounder = () => {
       <h1 className="founder-title">The Founder</h1>
       <div className="founder-content">
         <div className="founder-image">
-          <img src={Ouaissa} alt="Founder" />
+          <img
+            src={Ouaissa}
+            alt="Founder"
+            className="w-[1800px] h-[700px] object-contain"
+          />
         </div>
         <div className="founder-details">
           <p className="founder-name">IMANE</p>

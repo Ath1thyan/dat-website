@@ -8,6 +8,7 @@ import {
   Rochelle,
   RodHolden,
   Tony2,
+  Kheng,
 } from "../assets/index";
 
 const DctGuild = () => {
@@ -53,6 +54,12 @@ const DctGuild = () => {
       name: "Alex Openhiem",
       role: "Alex is a talented multidisciplinary industry creative and strategist who drives conceptual design across a range of print and digital mediums. He has worked directly with a range of global A-brands from start-ups through to national governing bodies, international creative agencies, renewable energy companies and within the FMCG sector.",
       image: Alexoppenheim,
+    },
+    {
+      id: 8,
+      name: "Lim Teck Kheng",
+      role: "Kheng, co-founder of KAMI, a community-driven social-fi network for creatives, is seasoned industry veteran with over 30 years extensive experience in Music, A&R, Artist Development, Creative/Aesthetic Direction and Management with leading global music heavyweights, BMG, David Geffen, Polygram, Sony and Universal Music. He works alongside regional and international artists, songwriters, producers, directors and creators in the lifestyle, entertainment and media industries. He spearheads digital marketing, content distribution, engagement and consumer outreach across technology channels.",
+      image: Kheng,
     },
   ];
 

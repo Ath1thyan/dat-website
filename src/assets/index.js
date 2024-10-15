@@ -10,6 +10,7 @@ import RodHolden from "./GuildPics/RodHolden.jpeg";
 import Tony2 from "./GuildPics/Tony2.jpeg";
 import s from "./s.png";
 import Ouaissa from "./websitePics/Ouaissa.jpg";
+import Kheng from "./GuildPics/Kheng.png";
 
 export {
   image1,
@@ -24,4 +25,5 @@ export {
   Tony2,
   s,
   Ouaissa,
+  Kheng,
 };

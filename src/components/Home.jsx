@@ -52,13 +52,13 @@ const Home = () => {
               </li>
             ))}
             <li>
-              <FaInstagram />
+              <FaInstagram className="cursor-pointer" />
             </li>
             <li>
-              <FaLinkedin />
+              <FaLinkedin className="cursor-pointer" />
             </li>
             <li>
-              <FaTwitterSquare />
+              <FaTwitterSquare className="cursor-pointer" />
             </li>
           </ul>
         </div>
