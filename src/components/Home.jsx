@@ -33,12 +33,12 @@ const Home = () => {
         height: "700px",
       }}
     >
-      <nav className="flex justify-between p-5 md:p-20 items-center">
+      <nav className="flex justify-start gap-20 p-5 md:p-20 items-center">
         <div className="uppercase text-yellow-400 font-bold text-xl md:text-2xl flex items-center gap-2">
           <img src={s} alt="" className="w-28 h-28 rounded-md" />
         </div>
         <div className="hidden md:block">
-          <ul className="flex flex-row gap-4 md:gap-8 text-[#ff7e00] items-center font-helvetica-bold">
+          <ul className="flex flex-row gap-4 md:gap-10 text-lg text-[#ff7e00] items-center font-helvetica-bold">
             {navLink.map((data, index) => (
               <li key={index} className="cursor-pointer">
                 <Link
@@ -52,10 +52,23 @@ const Home = () => {
               </li>
             ))}
             <li>
-              <FaInstagram className="cursor-pointer" />
+              <a
+                href="https://www.instagram.com/dctinqa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="cursor-pointer" />
+              </a>
             </li>
+
             <li>
-              <FaLinkedin className="cursor-pointer" />
+              <a
+                href="https://www.linkedin.com/in/imane-o-587b8579/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="cursor-pointer" />
+              </a>
             </li>
             <li>
               <FaTwitterSquare className="cursor-pointer" />

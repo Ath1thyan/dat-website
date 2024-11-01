@@ -48,7 +48,7 @@ const Footer = () => {
             Mobile
           </p>
           <p className="footer-contact" style={{ marginBottom: "15px" }}>
-            +974 5000 5412
+            +974 3383 2999
           </p>
           <p
             className="footer-contact"
@@ -56,33 +56,36 @@ const Footer = () => {
           >
             Email
           </p>
-          <p className="footer-contact underline cursor-pointer">
+          <a
+            href="mailto:info@dct.com.qa"
+            className="footer-contact underline cursor-pointer"
+          >
             info@dct.com.qa
-          </p>
+          </a>
         </div>
         <div className="footer-column">
           <div className="social-icons">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/dctinqa"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/imane-o-587b8579/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a
+            {/* <a
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faTwitter} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
