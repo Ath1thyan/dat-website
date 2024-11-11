@@ -68,14 +68,10 @@ const DctGuild = () => {
     <section id="DctGuild" className="main dct-guild">
       <h1 className="guild-title">DCT Guild</h1>
       <p className="guild-description">
-        DCT deeply values the counsel, and perspective of experienced regional
-        and international industry entrepreneurs and market innovation for
-        insights, exchange of ideas-and shared knowledge on a variety of
-        strategies in order to fulfil our promise av DCT in plaving nor art.
+        DCT deeply values the counsel, and perspective of experienced regional and international industry entrepreneurs and market innovation for insights, exchange of ideas and shared knowledge on a variety of strategies in order to fulfil our promise as champions of creativity.
       </p>
       <p className="guild-description">
-        As a team, we are stronger with our diverse skills and competencies, and
-        a deep sense of purpose
+        As a team, we are stronger with our diverse skills and competencies, and united by a deep sense of purpose to pivot into a frontier of evolving opportunities.
       </p>
       <div className="guild-members">
         {members.map((member) => (
