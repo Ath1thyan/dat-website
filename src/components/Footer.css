@@ -1,44 +1,50 @@
 .footer {
-  background-color: #ff7e00; /* Same violet background as The Founder page */
+  background-color: #ff7e00;
   color: white;
-  padding: 50px;
+  padding: 50px 20px; /* Adjusted for smaller screens */
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 150px;
-  margin-top: 150px;
+  gap: 20px;
+  margin: 50px 0; /* Reduced margin for better responsiveness */
 }
 
 .footer-column {
   flex: 1;
+  min-width: 200px; /* Ensure columns don’t shrink too much */
   margin: 10px;
 }
 
 .footer-title {
-  font-size: 3.5rem;
-  color: white; /* Orange-yellow color */
+  font-size: 3rem;
+  color: white;
   margin-bottom: 20px;
   font-weight: bold;
   font-family: Helvetica;
+  text-align: center;
 }
 
 .footer-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: Helvetica;
+  text-align: center;
 }
+
 .footer-contact {
   color: white;
   font-family: Helvetica;
 }
+
 .footer-links {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 .footer-links li {
@@ -58,6 +64,7 @@
 
 .social-icons {
   display: flex;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -68,7 +75,7 @@
 }
 
 .social-icons a:hover {
-  color: white; /* Orange-yellow on hover */
+  color: #fac227;
 }
 
 .footer-line {
@@ -77,20 +84,63 @@
 }
 
 .footer-copyright {
-  text-align: normal;
+  text-align: center;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: Helvetica;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .footer-title {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .footer-column {
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-title {
+    font-size: 2rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .footer-contact {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .footer-contact,
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.2rem;
   }
 }

@@ -1,53 +1,56 @@
 .dct-guild {
   color: #333;
-  padding: 100px 50px;
+  padding: 50px 20px;
   text-align: normal;
 }
 
 .guild-title {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #333;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
-  margin-left: 150px;
+  text-align: center;
   font-family: Helvetica;
 }
 
 .guild-description {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 50px;
-  width: 700px;
-  margin-left: 150px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
   font-family: Helvetica;
 }
 
 .guild-members {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
   gap: 20px;
   justify-items: center;
-  margin-left: 150px;
-  margin-right: 150px;
-  padding: 100px;
+  padding: 50px 20px;
 }
 
 .member-card {
-  background-color: #ffffff00;
+  background-color: #ffffff;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   transition: transform 0.3s ease;
+  max-width: 100%;
 }
 
 .member-card:hover {
   transform: translateY(-5px);
 }
 
-/* .member-image {
-    width: 350px;
-    height: 350px;
-    margin-bottom: 20px;
-  } */
+.member-card img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
 
 .member-name {
   font-size: 1.5rem;
@@ -61,20 +64,53 @@
   font-size: 1rem;
   color: #777;
   font-family: Helvetica;
+  text-align: left;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .guild-members {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .guild-title {
     font-size: 2.5rem;
   }
 
-  .member-card {
-    padding: 15px;
+  .guild-description {
+    font-size: 1rem;
+    padding: 0 20px;
   }
 
-  .member-image {
-    width: 120px;
-    height: 120px;
+  .member-card img {
+    max-width: 100%;
+  }
+
+  .member-name {
+    font-size: 1.2rem;
+  }
+
+  .member-role {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .guild-title {
+    font-size: 2rem;
+  }
+
+  .guild-description {
+    font-size: 0.9rem;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-role {
+    font-size: 0.8rem;
   }
 }

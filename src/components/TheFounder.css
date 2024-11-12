@@ -2,39 +2,49 @@
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: normal;
+  align-items: center;
   text-align: left;
+  padding: 20px;
 }
 
 .founder-title {
   font-size: 4rem;
   color: white;
-  margin-bottom: 50px;
-  margin-left: 150px;
+  margin-bottom: 40px;
   font-weight: bold;
   font-family: Helvetica;
+  text-align: center;
 }
 
 .founder-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-left: 150px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
 }
 
-/* .founder-image img {
-  width: 1800px;
-  height: 700px;
-} */
+.founder-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.founder-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
 
 .founder-details {
-  flex-grow: 1;
-  padding: 50px;
-  margin-left: 100px;
+  flex: 1;
+  padding: 20px;
 }
 
 .founder-name {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   font-weight: 500;
   font-family: Helvetica;
@@ -43,41 +53,69 @@
 .founder-designation {
   font-size: 1.2rem;
   color: white;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   font-weight: bold;
   font-family: Helvetica;
 }
 
 .founder-description {
-  font-size: 1rem; /* Equivalent to text-md */
+  font-size: 1rem;
   color: white;
-  margin-bottom: 15px; /* Reduce the gap between paragraphs */
+  margin-bottom: 15px;
   font-family: Helvetica;
-  margin-right: 50px;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .founder-title {
+    font-size: 3rem;
+  }
+
   .founder-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .founder-image img {
-    margin-bottom: 30px;
-    width: 1800px;
-  }
-
-  .founder-title {
-    font-size: 2.5rem;
-  }
-
   .founder-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .founder-designation {
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .founder-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .founder-img {
+    width: 100%;
+  }
+
+  .founder-description {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-title {
+    font-size: 2rem;
+  }
+
+  .founder-name {
+    font-size: 1.2rem;
+  }
+
+  .founder-designation {
+    font-size: 0.9rem;
+  }
+
+  .founder-description {
+    font-size: 0.8rem;
   }
 }

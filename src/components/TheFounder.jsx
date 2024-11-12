@@ -11,7 +11,7 @@ const TheFounder = () => {
           <img
             src={Ouaissa}
             alt="Founder"
-            className="w-[1800px] h-[700px] object-contain"
+            className="founder-img"
           />
         </div>
         <div className="founder-details">
@@ -39,7 +39,6 @@ const TheFounder = () => {
               environmental challenges.
             </p>
             <p className="founder-description">
-              {" "}
               We invest creatively to stimulate innovation and growth, develop
               human capital to uplift capabilities and enhance potential; enable
               natural capital to foster sustainable solutions for a better
