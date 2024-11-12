@@ -26,7 +26,7 @@
 .guild-members {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
-  gap: 20px;
+  gap: 30px;
   justify-items: center;
   padding: 50px 20px;
 }
@@ -35,29 +35,54 @@
   background-color: #ffffff;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  overflow: hidden; /* To round image corners if necessary */
+  position: relative;
+  border: 2px solid #f0f0f0; /* Light border around cards */
+  backdrop-filter: blur(10px); /* Soft background blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .member-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
 }
 
 .member-card img {
-  width: 100%;
+  width: 50%;
   height: auto;
-  max-width: 350px;
-  border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover img {
+  transform: scale(1.05); /* Slight zoom effect on image */
+}
+
+.member-details {
+  width: 50%; /* Take up the remaining space */
+  text-align: left;
+  padding: 20px;
 }
 
 .member-name {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #333;
   margin-bottom: 10px;
   font-weight: bold;
   font-family: Helvetica;
+  transition: color 0.3s ease;
+}
+
+.member-card:hover .member-name {
+  color: #ff6f61; /* Change color on hover */
 }
 
 .member-role {
@@ -65,12 +90,29 @@
   color: #777;
   font-family: Helvetica;
   text-align: left;
+  padding: 0 15px;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .guild-members {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .member-card {
+    flex-direction: column; /* Stack photo and details on smaller screens */
+  }
+
+  .member-card img {
+    width: 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .member-details {
+    width: 100%;
+    text-align: center; /* Center-align details on smaller screens */
   }
 }
 
@@ -82,10 +124,6 @@
   .guild-description {
     font-size: 1rem;
     padding: 0 20px;
-  }
-
-  .member-card img {
-    max-width: 100%;
   }
 
   .member-name {

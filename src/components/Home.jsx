@@ -25,6 +25,7 @@ const Home = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   return (
     <section
       className="bg-cover bg-center"
@@ -33,48 +34,39 @@ const Home = () => {
         height: "700px",
       }}
     >
-      <nav className="flex justify-start gap-20 p-5 md:p-20 items-center">
+      <nav className="flex justify-between items-center p-5 md:p-20">
+        {/* Logo Section */}
         <div className="uppercase text-yellow-400 font-bold text-xl md:text-2xl flex items-center gap-2">
-          <img src={s} alt="" className="w-28 h-28 rounded-md" />
+          <img src={s} alt="Logo" className="w-28 h-28 rounded-md" />
         </div>
-        <div className="hidden md:block">
-          <ul className="flex flex-row gap-4 md:gap-10 text-lg text-[#ff7e00] items-center font-helvetica-bold">
+
+        {/* Desktop Navbar Links */}
+        <div className="hidden md:flex">
+          <ul className="flex gap-10 text-lg text-[#ff7e00] items-center font-helvetica-bold">
             {navLink.map((data, index) => (
-              <li key={index} className="cursor-pointer">
-                <Link
-                  to={data.link}
-                  aria-current="page"
-                  smooth={true}
-                  spy={true}
-                >
+              <li key={index} className="cursor-pointer hover:text-white">
+                <Link to={data.link} smooth={true} spy={true}>
                   {data.name}
                 </Link>
               </li>
             ))}
-            <li>
-              <a
-                href="https://www.instagram.com/dctinqa"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="cursor-pointer" />
+            <li className="cursor-pointer">
+              <a href="https://www.instagram.com/dctinqa" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={24} />
               </a>
             </li>
-
-            <li>
-              <a
-                href="https://www.linkedin.com/in/imane-o-587b8579/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin className="cursor-pointer" />
+            <li className="cursor-pointer">
+              <a href="https://www.linkedin.com/in/imane-o-587b8579/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={24} />
               </a>
             </li>
-            <li>
-              <FaTwitterSquare className="cursor-pointer" />
+            <li className="cursor-pointer">
+              <FaTwitterSquare size={24} />
             </li>
           </ul>
         </div>
+
+        {/* Mobile Navbar Toggle Button */}
         <div className="block md:hidden">
           <button
             onClick={toggleMenu}
@@ -84,28 +76,32 @@ const Home = () => {
           </button>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-yellow-400 text-white p-5">
+        <div className="md:hidden bg-yellow-400 text-white p-5 absolute top-36 left-0 right-0 z-10">
           <ul className="flex flex-col gap-4 items-center font-helvetica-light">
             {navLink.map((data, index) => (
               <li key={index}>
-                <a href={data.link} onClick={toggleMenu}>
+                <a href={data.link} onClick={toggleMenu} className="text-white">
                   {data.name}
                 </a>
               </li>
             ))}
             <li>
-              <FaInstagram />
+              <FaInstagram size={24} className="cursor-pointer" />
             </li>
             <li>
-              <FaLinkedin />
+              <FaLinkedin size={24} className="cursor-pointer" />
             </li>
             <li>
-              <FaTwitterSquare />
+              <FaTwitterSquare size={24} className="cursor-pointer" />
             </li>
           </ul>
         </div>
       )}
+
+      {/* Hero Text Section */}
       <div className="font-helvetica-bold text-4xl md:text-6xl text-[#ff7e00] uppercase mt-20 ml-10 md:mt-36 md:ml-40">
         initiate <br /> elevate <br /> catalyse
       </div>
