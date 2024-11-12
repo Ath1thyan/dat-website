@@ -79,24 +79,30 @@ const Home = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-yellow-400 text-white p-5 absolute top-36 left-0 right-0 z-10">
+        <div className="md:hidden bg-orange-400 text-white p-5 absolute top-36 left-0 right-0 z-10">
           <ul className="flex flex-col gap-4 items-center font-helvetica-light">
             {navLink.map((data, index) => (
               <li key={index}>
-                <a href={data.link} onClick={toggleMenu} className="text-white">
+                <Link to={data.link} onClick={toggleMenu} className="text-white cursor-pointer">
                   {data.name}
-                </a>
+                </Link>
               </li>
             ))}
+            <ul className="flex flex-row gap-5">
             <li>
-              <FaInstagram size={24} className="cursor-pointer" />
+            <a href="https://www.instagram.com/dctinqa" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={24} />
+              </a>
             </li>
             <li>
-              <FaLinkedin size={24} className="cursor-pointer" />
+            <a href="https://www.linkedin.com/in/imane-o-587b8579/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={24} />
+              </a>
             </li>
             <li>
               <FaTwitterSquare size={24} className="cursor-pointer" />
             </li>
+            </ul>
           </ul>
         </div>
       )}
