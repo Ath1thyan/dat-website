@@ -6,14 +6,14 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
+import { s } from "../assets/index";
 
 const Footer = () => {
   return (
     <footer id="Footer" className="footer section">
       <div className="footer-content">
         <div className="footer-column">
-          <p className="footer-text">DCT</p>
-          <p className="footer-title">THINK BOLD</p>
+        <img src={s} alt="Logo" className="w-28 h-28 rounded-md ml-10" />
         </div>
         <div className="footer-column">
           <ul className="footer-links">

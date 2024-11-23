@@ -60,9 +60,9 @@ const Home = () => {
                 <FaLinkedin size={24} />
               </a>
             </li>
-            <li className="cursor-pointer">
+            {/* <li className="cursor-pointer">
               <FaTwitterSquare size={24} />
-            </li>
+            </li> */}
           </ul>
         </div>
 
